@@ -1,1 +1,1 @@
-web: gunicorn chupa_project.wsgi
+web: gunicorn chupa_project.wsgi:application --bind 0.0.0.0:8080 --workers 4
